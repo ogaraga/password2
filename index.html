@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Raymond Ogaraga" />
+    <meta name="description" content="multiconditions of passwording a form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multicondition of form-password test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="sent">
+    <form>
+      <h1>multicondition password test</h1>
+      <input
+        type="password"
+        name="password"
+        id="pass1"
+        placeholder="Enter password here"
+      />
+      <input
+        type="password"
+        name="password"
+        id="pass2"
+        placeholder="Confirm password"
+      />
+      <button type="button" id="enter">Enter</button>
+    </form>
+    <section class="divs">
+      <div id="success-message">
+        <p id="suc1" style="display: none">
+          Atleast a number is picked<img
+            src="success.png"
+            width="15"
+            height="15"
+          />
+        </p>
+        <p id="suc2" style="display: none">
+          Atleast a capital letter is picked<img
+            src="success.png"
+            width="15"
+            height="15"
+          />
+        </p>
+        <p id="suc3" style="display: none">
+          Atleast a small letter is picked<img
+            src="success.png"
+            width="15"
+            height="15"
+          />
+        </p>
+        <p id="suc4" style="display: none">
+          Atleast a special character is picked<img
+            src="success.png"
+            width="15"
+            height="15"
+          />
+        </p>
+        <p id="suc5">
+          Atleast 6 characters are picked<img
+            src="success.png"
+            width="15"
+            height="15"
+          />
+        </p>
+        <p id="suc6">
+          Passwords are equal in value and type<img
+            src="success.png"
+            width="15"
+            height="15"
+          />
+        </p>
+      </div>
+      <div id="error-message">
+        <p id="err1">must contain atleast a number</p>
+        <p id="err2">must contain atleast a capital letter</p>
+        <p id="err3">must contain atleast a small letter</p>
+        <p id="err4">must contain atleast a special character</p>
+        <p id="err5">must contain atleast 6 characters</p>
+        <p id="err6">Passwords must be equal in value and type</p>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
